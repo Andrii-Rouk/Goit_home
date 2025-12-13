@@ -31,7 +31,6 @@ ul, ol {
 }
 
 a {
-    text-decoration: none;
     margin: 0;
 }
 
@@ -654,6 +653,7 @@ position: absolute;
 .comment-input {
     width: 100%;
     height: 138px;
+    margin-bottom: 16px;
 }
 
 .user-input {
@@ -785,4 +785,63 @@ margin-bottom: 16px;
         line-height: 24px;
         letter-spacing: 4%;
         text-align: center;
+}
+
+
+.button-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.policy {
+    line-height: 16px;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #4d5ae5;
+}
+
+.castoom-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+}
+
+.label-name-checkbox {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+}
+
+.castoom {
+}
+
+.label-name-checkbox {
+    display: flex;
+}
+
+.checkbox:checked + .label-name-checkbox .castoom-checkbox {
+    background-color: #4D5AE5;
+    border: none;
+    fill: #fff;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    /* щоб текст не переносився */
+    border: 0;
 }

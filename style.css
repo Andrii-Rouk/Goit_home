@@ -488,6 +488,7 @@ line-height: 21px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #4D5AE5;
+text-decoration: none;
 }
 
 .logo-white {
@@ -568,6 +569,75 @@ width: 96px;
     flex-direction: column;
     gap: 16px;
     width: 208px;
+    margin-right: 80px;
+}
+
+.sub-title {
+    color:#ffffff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 2%;
+        text-align: left;
+        margin-bottom: 16px;
+}
+
+.sub-block {
+
+}
+
+.sub-wrapper {display: flex;}
+
+.subinput {}
+
+.subinput-mail {
+    display: flex;
+    width: 264px;
+    height: 40px;
+    box-sizing: border-box;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        background-color:#2e2f42;
+        padding: 8px 16px;
+        margin-right: 24px;
+}
+
+.subinput-mail::placeholder {
+color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 4%;
+    text-align: left;
+
+}
+
+.mail-btn {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 24px 8px 24px;
+        border-radius: 4px;
+        color: #fff;
+            background-color: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+}
+
+.mail-btn:hover, .mail-btn:focus {
+    background-color: #404BBF;
+}
+
+.mail-btn .btn-icon {
+    margin-left: 16px;
+}
+
+.btn-icon {
+    fill: #fff;
 }
 
    /* modal */
@@ -775,7 +845,7 @@ min-height: 336px;
     width: 169px;
     height: 56px;
     border-radius: 4px;
-    background-color: rgba(77, 90, 229, 1);
+    background-color: #4d5ae5;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -786,8 +856,12 @@ min-height: 336px;
         line-height: 24px;
         letter-spacing: 4%;
         text-align: center;
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-submit:hover, .modal-submit:focus {
+    background-color: #404BBF;
+}
 
 .button-block {
     display: flex;
@@ -813,6 +887,7 @@ min-height: 336px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     margin-right: 8px;
     box-sizing: border-box;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .label-name-checkbox {
